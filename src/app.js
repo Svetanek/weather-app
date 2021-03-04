@@ -2,9 +2,10 @@ const path = require('path')
 const hbs = require('hbs')
 const express = require('express');
 const { Recoverable } = require('repl');
-const app = express();
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const app = express();
+const port = process.env.PORT || 3000;
 
 //defines path for express config
 const publicDirectory = path.join(__dirname, "../public")
@@ -64,8 +65,8 @@ app.get('*', (reg, res, next) => {
     res.render("404", {error: "My custom 404 page", title: "Error", name: "Svetlana Shinkar" })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}.`)
 })
 
 // app.get('/products', (req, res) => {
