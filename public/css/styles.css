@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  --color-primary: rgb(8, 55, 63);
+}
+/* html {
+  font-size: 62.5%;
+} */
+body {
+  color: #333333;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+#video-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+header {
+  margin: 4.5rem 0;
+  /* color: var(--color-primary); */
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+footer {
+  color: #eeeeee;
+  padding: 1rem;
+  margin-top: auto 0;
+  border-top: 1px solid #eeeeee;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem auto;
+
+  /* rgb(65, 207, 226); */
+  /* -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgb(227, 234, 240),
+    rgb(81, 100, 146)
+  ); */
+}
+
+.header-link {
+  /* color: #888888; */
+  font-size: 1.6rem;
+  color: inherit;
+  margin-right: 3rem;
+
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+.main-content {
+  min-height: 100%;
+  flex-grow: 1;
+  color: white;
+}
+input,
+button {
+  font-size: 1.2em;
+  padding: 0.7rem;
+}
+
+input {
+  width: 18rem;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  color: #888888;
+}
+input:active,
+input:focus {
+  outline: 0;
+  border-image: none;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  color: white;
+  background: #888888;
+  margin: 1.5rem 1rem;
+}
+/* button:active,
+button:focus {
+  outline: 0;
+  border-image: none;
+} */
+.portrait {
+  height: 15rem;
+  border-radius: 10%;
+}
+#message-1,
+#message-2 {
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .main-content {
+    margin: 0 auto;
+  }
+  header {
+    color: white;
+    -webkit-text-stroke: 1px black;
+  }
+  #header-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  input,
+  button {
+    font-size: 1rem;
+  }
+}

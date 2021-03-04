@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather</title>
+  <link rel="icon" href="/images/weather.png">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div id="video">
+    <video id="video-content" autoplay muted loop>
+      <source src="/images/video.mp4" type="video/mp4" />
+      <source src="/images/video.webm" type="video/webm" />
+      Your browser is not supported!
+    </video>
+  </div>
+  <div class="main-content">
+    {{>header}}
+    <p>Search the location</p>
+    <form>
+      <input type="text" placeholder="location">
+      <button>Search</button>
+    </form>
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+  </div>
+
+  {{>footer}}
+  <script src="/js/js.js"></script>
+</body>
+
+</html>
