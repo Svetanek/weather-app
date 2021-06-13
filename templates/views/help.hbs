@@ -4,16 +4,32 @@
 <head>
   <title>Help</title>
   <link rel="icon" href="/images/weather.png">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles1.css">
 </head>
 
 <body>
   <div class="main-content">
-    {{>header}}
+    <div class="slider">
+
+      <div class="slides">
+        <img src="/images/me_Tokyo.jpg" alt="me" id="slide-1" />
+        <img src="/images/loan-vs-wholelife_screen.png" alt="" id="slide-2" />
+        <img src="/images/Screen Shot 2020-09-09 at 9.55.20 PM.png" alt="" id="slide-3" />
+        <img src="/images/Screen Shot 2020-09-10 at 2.00.17 PM.png" alt="" id="slide-4" />
+
+      </div>
+      <nav id="slider__links">
+        <a href="#slide-1" />
+        <a href="#slide-2" />
+        <a href="#slide-3" />
+        <a href="#slide-4" />
+      </nav>
+    </div>
+    {{!-- {{>header}}
     <p>{{text}}</p>
-    <p id="text with circle">Here is the circle <span id="radio-button"></span></p>
+    <p id="text with circle">Here is the circle <span id="radio-button"></span></p> --}}
   </div>
-  {{>footer}}
+  {{!-- {{>footer}} --}}
 </body>
 
 </html>

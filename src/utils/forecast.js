@@ -14,8 +14,8 @@ const forecast = (lat, long, callback) => {
     }
     else {
       const data = response.body.current
-      callback(undefined, `Currently it is ${data.temperature} degrees and ${data.precip * 100}% chance of rain. ${data.wind_dir} wind, speed = ${data.wind_speed}mph`)
-      // console.log(`Currently it is ${data.temperature} degrees and ${data.precip * 100}% chance of rain. ${data.wind_dir} wind, speed = ${data.wind_speed}`
+      callback(undefined, `Currently it is ${data.temperature} degrees and ${data.precip * 100}% chance of rain. ${data.wind_dir} wind.`)
+      // console.log(`Currently it is ${data.temperature} degrees and ${data.precip * 100}% chance of rain. ${data.wind_dir} wind, speed = ${data.wind_speed}mph`
     }
 })
 }
